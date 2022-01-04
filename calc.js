@@ -76,7 +76,6 @@ const inputKeys = {
 
 document.addEventListener('keydown', (event) => {
     if (inputKeys.hasOwnProperty(event.code)){
-        let code = event.code
         if (typeof inputKeys[event.code] === "function") inputKeys[event.code]()
         else addToString(inputKeys[event.code])
     }
