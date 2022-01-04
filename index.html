@@ -5,9 +5,9 @@
     <title>JS Calc</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-3xl ">
-    <div class="flex justify-center items-center w-screen h-screen bg-gray-700">
-        <div class="w-[400px] h-[700px] grid grid-cols-4 grid-rows-7 gap-1 bg-black rounded-2xl overflow-hidden p-2">
+<body class="">
+    <div class="flex justify-center items-center w-screen h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-3xl">
+        <div class="w-[400px] h-[700px] grid grid-cols-4 grid-rows-7 gap-1 bg-black rounded-2xl overflow-hidden p-1 shadow-2xl">
             <div class="flex p-2 pb-6 text-5xl font-semibold bg-black col-span-4 row-span-3 justify-end items-end">
                 <span id="inputted" class="flex flex-wrap text-white break-normal">0</span>
             </div>
@@ -26,8 +26,8 @@
             <button data-input-value="8" data-button class="bg-gray-100 font-bold">8</button>
             <button data-input-value="9" data-button class="bg-gray-100 font-bold">9</button>
             <button data-input-value="+" data-button class="bg-orange-500 font-bold text-white">+</button>
-            <button data-input-value="." data-button class="bg-gray-100 font-bold rounded-bl-xl">.</button>
-            <button data-input-value="0" data-button class="bg-gray-100 col-span-2 font-bold">0</button>
+            <button data-input-value="0" data-button class="bg-gray-100 col-span-2 font-bold rounded-bl-xl">0</button>
+            <button data-input-value="." data-button class="bg-gray-100 font-bold">.</button>
             <button data-button-calc class="bg-orange-500 font-bold text-white rounded-br-xl">=</button>
         </div>
     </div>
