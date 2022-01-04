@@ -3,11 +3,13 @@ const   buttons = document.querySelectorAll('[data-button]'),
         inputString = document.querySelector('#inputted')
         clear = document.querySelector('[data-button-clear]')
         clearAll = document.querySelector('[data-button-clear-all]')
-        specialCharacter  = ['*', '/', '+', '-'];
+        specialCharacter  = ['*', '/', '+', '-']
+        regexp = new RegExp(/^-?\d+(\.\d+)?([-+*/]\d+(\.\d+)?)+/);
 
 
 const calculateString = () => {
-    inputString.innerHTML = new Function('return ' + inputString.innerHTML)();
+    if (regexp.test(inputString.innerHTML)) inputString.innerHTML = new Function('return ' + inputString.innerHTML)();
+    else inputString.innerHTML = '0'
 }
 
 const addToString = (input) => {
